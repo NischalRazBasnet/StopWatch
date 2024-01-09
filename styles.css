@@ -1,0 +1,91 @@
+*{
+    font-family: 'Tektur', sans-serif;
+}
+
+body{
+    height:100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.heading{
+    position: absolute;
+    left: 25% ;
+    font-size:50px;
+    font-style: oblique;
+    text-decoration:underline;
+    text-align: center;
+}
+
+.container{
+    position: absolute;
+    top:50%;
+    left:35%;
+    transform: translate(-50%, -50%);
+    padding: 20px 30px;
+    height: 30%;
+    width: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(18, 18, 18);
+    border: 15px solid rgba(0, 0, 0, 0.608);
+    border-radius: 180px;
+    box-shadow:0px 0px 15px rgba(58, 58, 224, 0.326);
+}
+
+.timer{
+    position: absolute;
+    top: 35%;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px;
+    background-color:rgba(0, 0, 0, 0.316);
+    border: 3px solid rgba(44, 38, 38, 0.5);
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(44, 38, 38, 0.5);
+}
+
+.container .buttons{
+    position: absolute;
+    flex-direction: row;
+    top: 60%;
+    padding: 10px;
+    margin: 10px;
+    height: 10px 20px;
+}
+
+.buttons #startbtn,#lapbtn,#resetbtn{
+    width:65px;
+    height: 50px;
+    padding: 10px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color:rgb(18, 18, 18);
+    border: 2px solid rgba(44, 38, 38, 0.5);
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+
+.lapBox{
+    position: absolute;
+    top: 20%;
+    left:60%;
+    height: 60vh;
+    width:300px;
+    padding: 10px;
+    border: 2px solid rgba(44, 38, 38, 0.5);
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgb(35, 34, 34);
+    overflow-y: scroll;
+    scrollbar-3dlight-color: black;
+}
+.lapBox h1{
+    text-decoration: underline;
+    text-align: center;
+    padding: 5px;
+}
